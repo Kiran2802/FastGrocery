@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="apps.developer.fastgrocery">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".grocery_activity.Search"></activity>
+        <activity android:name=".grocery_activity.Contact_Us" />
+        <activity android:name=".grocery_activity.Update_profile" />
+        <activity android:name=".grocery_activity.NotificationDetailsActivity" />
+        <activity android:name=".grocery_activity.RazerpayActivity" />
+        <activity android:name=".grocery_activity.Order_Summary" />
+        <activity android:name=".grocery_activity.PlaceOrderActivity" />
+        <activity android:name=".grocery_activity.MyOrderActivity" />
+        <activity android:name=".grocery_activity.Cart_Activity" />
+        <activity android:name=".grocery_activity.ItemDetailsActivity" />
+        <activity android:name=".grocery_activity.AddressActivity" />
+        <activity android:name=".grocery_activity.FeedBackActivity" />
+        <activity android:name=".grocery_activity.AboutActivity" />
+        <activity android:name=".grocery_activity.TramsAndConditionActivity" />
+        <activity android:name=".grocery_activity.NotificationActivity" />
+        <activity android:name=".grocery_activity.ProfileActivity" />
+        <activity android:name=".grocery_activity.ForgotPassword" />
+        <activity android:name=".grocery_activity.SignUpActivity" />
+        <activity android:name=".grocery_activity.LoginActivity" />
+        <activity android:name=".grocery_activity.splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".grocery_activity.InfoActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

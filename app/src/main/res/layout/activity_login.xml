@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".grocery_activity.LoginActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgView_logo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+               android:background="@drawable/grocerylogo" />
+
+            <LinearLayout
+                android:id="@+id/rellay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/imgView_logo">
+
+                <TextView
+                    android:id="@+id/tv_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:text="Log In"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp" />
+
+                <LinearLayout
+                    android:id="@+id/linlayLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_login"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            app:boxBackgroundColor="@color/icons"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/ed_username"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Email / Mobile No"
+                                android:fontFamily="@font/quicksand_bold"
+                                android:drawableStart="@drawable/ic_user_box_black_24dp"
+                                android:drawableTint="@color/divider"
+                                android:drawablePadding="10dp"
+                                android:inputType="text"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:boxBackgroundColor="@color/icons"
+                            app:passwordToggleEnabled="true">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/ed_password"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Password"
+                                android:fontFamily="@font/quicksand_bold"
+                                android:drawableStart="@drawable/ic_password_black_24dp"
+                                android:drawableTint="@color/divider"
+                                android:drawablePadding="10dp"
+                                android:inputType="textPassword"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnlogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/linlayLogin"
+                    android:layout_margin="10dp"
+                    android:text="Login"
+                    app:elevation="10dp"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:textColor="@color/icons"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSignUP"
+                    android:layout_width="match_parent"
+                    android:text="Sign Up"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:layout_height="wrap_content"
+                    app:strokeColor="@color/primary_light"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:textSize="10sp"
+                    android:textColor="@color/primary_light" />
+
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:layout_gravity="center"
+                    android:background="@color/divider" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnForgotPassword"
+                    android:layout_width="match_parent"
+                    android:text="Forgot Password?"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    app:strokeColor="@color/primary_light"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:textSize="10sp"
+                    android:textColor="@color/primary_light" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/icons"
+    tools:context=".grocery_activity.Cart_Activity">
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+
+                android:id="@+id/lvlmucard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+            </LinearLayout>
+
+        </ScrollView>
+        <LinearLayout
+            android:id="@+id/lvl_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image" />
+
+            <TextView
+                android:id="@+id/txt_nodatatitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/app_name"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/lvlbacket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:strokeColor="@color/divider"
+            android:elevation="5dp"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_alignParentBottom="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lblcheckoutTotalPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:text="Total Item"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:textColor="@color/secondary_text"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:paddingStart="3dp"
+                    android:paddingEnd="3dp"
+                    android:paddingTop="5dp"
+                    android:background="@color/divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lblTotalBill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Amount"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/totleAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="11080.0"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/txt_countinue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order Now"
+                android:fontFamily="@font/quicksand_bold"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@color/icons"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

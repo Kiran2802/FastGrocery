@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/icons"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.home.HomeFragment"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:layout_margin="5dp">
+                        <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/viewPager"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <com.google.android.material.tabs.TabLayout
+                            android:id="@+id/tabview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="#00000000"
+                            app:tabBackground="@drawable/tab_selector"
+                            app:tabIndicatorGravity="center" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <!--   <LinearLayout
+                       android:id="@+id/SliderDots"
+                       android:layout_below="@+id/viewPager"
+                       android:orientation="horizontal"
+                       android:gravity="bottom|center_horizontal"
+                       android:layout_width="match_parent"
+                       android:background="@color/icons"
+                       android:layout_gravity="center"
+                       android:layout_height="10dp">
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:textColor="@color/secondary_text"
+                           android:layout_gravity="center"
+                           android:gravity="center"
+                           android:textSize="10dp"/>
+                   </LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:background="@color/icons"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/quicksand_bold"
+                                android:text="Home Services Easy Fast "
+                                android:textSize="16sp"
+                                android:textColor="@color/primary_text"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btn_HE_ViewMore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_gravity="end"
+                                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                android:text="@string/home_view_all"
+                                android:textSize="10sp"
+                                android:textColor="@color/colorPrimary" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/icons"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:orientation="horizontal" >
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clipToPadding="false"
+                            android:scrollbars="vertical" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:background="@color/icons"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/quicksand_bold"
+                                android:text="Hot deals on shop"
+                                android:textSize="16sp"
+                                android:textColor="@color/primary_text"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btn_LS_ViewMore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_gravity="end"
+                                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                android:text="@string/home_view_all"
+                                android:textSize="10sp"
+                                android:textColor="@color/colorPrimary" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/icons"
+                        android:orientation="horizontal" >
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_releted"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:clipToPadding="false"
+                            android:scrollbars="vertical" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:background="@color/icons"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/quicksand_bold"
+                                android:text="Three Easy steps"
+                                android:textSize="16sp"
+                                android:textColor="@color/primary_text"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/icons"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:src="@drawable/ic_img_first" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:src="@drawable/ic_step2" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:src="@drawable/ic_img_third" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Order directly\n from \nthe application"
+                                android:textColor="@color/secondary_text"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Your Order\n will be\nsent by our courier"
+                                android:textColor="@color/secondary_text"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Your Door \n to \nEnjoy Groceries"
+                                android:textColor="@color/secondary_text"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

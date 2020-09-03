@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".grocery_activity.Order_Summary">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/lvlone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fillViewport="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/background"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:elevation="2dp"
+                            android:background="@color/icons"
+                            android:gravity="center"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/ic_check" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txt_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingBottom="3dp"
+                                    android:ellipsize="end"
+                                    android:maxLines="1"
+                                    android:fontFamily="@font/quicksand_bold"
+                                    android:textColor="@color/primary_text"
+                                    android:text="" />
+
+                                <TextView
+                                    android:id="@+id/txt_address"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingBottom="3dp"
+                                    android:maxLines="2"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/quicksand_bold"
+                                    android:text="216 ,Apple squre,Motavarachha,surat"
+                                    android:textColor="@color/secondary_text" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/txt_changeadress"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded_area"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Change"
+                                android:fontFamily="@font/quicksand_bold"
+                                android:textColor="@color/colorPrimary"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/lvlordersumry"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:elevation="2dp"
+                            android:orientation="vertical">
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:elevation="2dp"
+                            android:background="@color/icons"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:padding="2dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="3dp"
+                                    android:fontFamily="@font/quicksand_bold"
+                                    android:text="PRICE DETAILS"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/secondary_text"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/view1"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/divider" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:padding="2dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="3dp"
+                                    android:text="Total"
+                                    android:fontFamily="@font/quicksand_bold"
+                                    android:textColor="@color/secondary_text"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/txt_subtotal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="right"
+                                    android:fontFamily="@font/quicksand_bold"
+                                    android:padding="3dp"
+                                    android:text="$50.00" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:padding="2dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/txt_delevritital"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="3dp"
+                                    android:text="Delivery Fee"
+                                    android:fontFamily="@font/quicksand_bold"
+                                    android:textColor="@color/secondary_text"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/txt_delivery"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="right"
+                                    android:fontFamily="@font/quicksand_bold"
+                                    android:padding="3dp"
+                                    android:text="$8.00" />
+                            </LinearLayout>
+                            <View
+                                android:id="@+id/view"
+                                android:layout_width="match_parent"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/dotted_line" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:padding="3dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="3dp"
+                                    android:fontFamily="@font/quicksand_bold"
+                                    android:text="Grand Total"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/primary_text"
+                                    android:textSize="14sp"  />
+
+                                <TextView
+                                    android:id="@+id/txt_total"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="right"
+                                    android:padding="3dp"
+                                    android:fontFamily="@font/quicksand_bold"
+                                    android:text="$58.00"
+                                    android:textColor="@color/primary_text"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="145dp"
+                        android:layout_height="40dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_total1"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Rs 54.0"
+                            android:textColor="@color/primary_text"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="CART TOTAL"
+                            android:textColor="@color/secondary_text"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/btn_cuntinus"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:text="PLACE ORDER"
+                        android:background="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:textColor="@color/icons"
+                        android:layout_alignParentRight="true"
+                        android:textSize="16dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lvltwo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_congo" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="38dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Congratulation!"
+                android:textColor="@color/primary_text"
+                android:textSize="26dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Your order has been sent. in about\n 50 minutes it should be at your door"
+                android:textColor="@color/primary_text"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="58dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rounded_green2"
+                android:elevation="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txt_trackorder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Track your order"
+                    android:textColor="@color/icons"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
